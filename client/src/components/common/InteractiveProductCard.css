@@ -1,0 +1,104 @@
+.ipc-card{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #f3f4f6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.ipc-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+  border-color: #e5e7eb;
+}
+
+.ipc-image{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 20px;
+  background: linear-gradient(180deg, #fff 0%, #f9fafb 100%);
+}
+
+.ipc-image img{ max-width: 100%; height: auto; display: block; }
+
+.ipc-emoji{
+  font-size: 48px;
+}
+
+.ipc-placeholder{
+  width: 64px;
+  height: 64px;
+  background: #f3f4f6;
+  border-radius: 12px;
+}
+
+.ipc-gradient{
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.0), rgba(0,0,0,0.02));
+}
+
+.ipc-content{
+  padding: 18px 20px;
+}
+
+.ipc-header{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ipc-title{
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 6px 0;
+}
+
+.ipc-desc{
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.ipc-logo{
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.ipc-price{
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 12px;
+}
+
+.ipc-footer{
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ipc-action{
+  padding: 8px 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Small variations */
+.selected-job-card{ border-color: #000000 !important; }
+.project-card{ --project-card: 1; }

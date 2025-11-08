@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+.navbar-logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+  /* ensure the logo stands out on any background */
+  background: #fff;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.navbar-logo{ display:flex; align-items:center; z-index: 5 }
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-item {
+  background: #f8f7f7;
+  border-radius: 999px;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Dropdown styles for Services */
+.navbar-item.dropdown{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar-item.dropdown .navbar-item-label{
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  background: #f8f7f7;
+  font-weight: 500;
+}
+
+.navbar-dropdown-menu{
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 200px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 8px 0;
+  display: none;
+  flex-direction: column;
+  z-index: 50;
+}
+
+.navbar-dropdown-menu a{
+  display: block;
+  padding: 8px 16px;
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar-dropdown-menu a:hover{ background: #f3f4f6; }
+
+.navbar-item.dropdown:hover .navbar-dropdown-menu,
+.navbar-item.dropdown:focus-within .navbar-dropdown-menu{ display: flex; }
