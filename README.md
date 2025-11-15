@@ -1,6 +1,6 @@
-# Mastersolis-AI-Career-Companion
+# -AI-Career-Companion
 
-Mastersolis-AI-Career-Companion is a full-stack application built using the MERN stack (MongoDB, Express, React, Node.js) designed to assist users in managing their career paths with AI-driven insights and resources.
+AI-Career-Companion is a full-stack application built using the MERN stack (MongoDB, Express, React, Node.js) designed to assist users in managing their career paths with AI-driven insights and resources.
 
 ## Table of Contents
 
